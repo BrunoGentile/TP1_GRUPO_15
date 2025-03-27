@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace TP1_GRUPO_15
 {
-    public partial class Form1: Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2(Form1 Form)
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 Ejercicio1 = new Form2(this);
-            Ejercicio1.Show();
-            this.Hide();
         }
     }
 }
