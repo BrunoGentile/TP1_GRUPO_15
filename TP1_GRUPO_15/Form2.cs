@@ -16,15 +16,25 @@ namespace TP1_GRUPO_15
         {
             InitializeComponent();
         }
+        private void ValidarAgregar()
+        {
+            btnAgregar.Enabled = (txtNombre.BackColor != Color.Red);
+        }
+
+        private void txtNombre_Validating(object sender, CancelEventArgs e)
+        {
+          
+            TextBox tb = (TextBox)sender;
+            if (tb.Text.Length == 0)
+                tb.BackColor = Color.Red;
+            else
+                tb.BackColor = System.Drawing.SystemColors.Window;
+            ValidarAgregar();
+        }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            btnAgregar.Enabled = false;
         }
     }
 }

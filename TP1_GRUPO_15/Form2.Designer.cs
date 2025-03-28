@@ -60,6 +60,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(227, 20);
             this.txtNombre.TabIndex = 2;
+            this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
             // 
             // lblNombre
             // 
@@ -70,7 +71,6 @@
             this.lblNombre.Size = new System.Drawing.Size(153, 18);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Ingrese un nombre:";
-            this.lblNombre.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnAgregar
             // 
