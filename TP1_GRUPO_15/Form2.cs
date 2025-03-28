@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,20 +17,26 @@ namespace TP1_GRUPO_15
         {
             InitializeComponent();
         }
-        private void ValidarAgregar()
-        {
-            //btnAgregar.Enabled = (txtNombre.BackColor != Color.Red);
-        }
+        //private void ValidarAgregar()
+        //{
+        //    btnAgregar.Enabled = (txtNombre.BackColor != Color.Red);
+        //}
 
-        private void txtNombre_Validating(object sender, CancelEventArgs e)
+        private bool ValidarAgregar(string TB)
         {
-          
-            TextBox tb = (TextBox)sender;
-            if (tb.Text.Length == 0)
-                tb.BackColor = Color.Red;
+            bool Condicion = true;
+
+            if ( TB.Length == 0 )
+            {
+                Condicion = false;
+                txtNombre.BackColor = Color.DarkRed;
+            }
             else
-                tb.BackColor = System.Drawing.SystemColors.Window;
-            //ValidarAgregar();
+            {
+                txtNombre.BackColor = System.Drawing.SystemColors.Window;
+            }
+
+                return Condicion;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -39,7 +46,15 @@ namespace TP1_GRUPO_15
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            lbxIzquierda.Items.Add(txtNombre.Text);
+            if ( ValidarAgregar( txtNombre.Text.Trim() ) ) {
+                lbxIzquierda.Items.Add( txtNombre.Text.Trim() );
+            }
+            
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txtNombre.BackColor = System.Drawing.SystemColors.Window;
         }
 
         private void btnTodos_Click(object sender, EventArgs e)
