@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace TP1_GRUPO_15
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2(Form1 Form)
+        public Form3(Form1 Form)
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
 
         }
