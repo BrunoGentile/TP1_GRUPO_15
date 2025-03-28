@@ -18,7 +18,7 @@ namespace TP1_GRUPO_15
         }
         private void ValidarAgregar()
         {
-            btnAgregar.Enabled = (txtNombre.BackColor != Color.Red);
+            //btnAgregar.Enabled = (txtNombre.BackColor != Color.Red);
         }
 
         private void txtNombre_Validating(object sender, CancelEventArgs e)
@@ -29,12 +29,25 @@ namespace TP1_GRUPO_15
                 tb.BackColor = Color.Red;
             else
                 tb.BackColor = System.Drawing.SystemColors.Window;
-            ValidarAgregar();
+            //ValidarAgregar();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            btnAgregar.Enabled = false;
+            //btnAgregar.Enabled = false;
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            lbxIzquierda.Items.Add(txtNombre.Text);
+        }
+
+        private void btnTodos_Click(object sender, EventArgs e)
+        {
+            foreach (string nombre in lbxIzquierda.Items)
+            {
+                lbxDerecha.Items.Add(nombre);
+            }
         }
     }
 }

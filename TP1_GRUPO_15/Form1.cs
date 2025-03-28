@@ -30,5 +30,12 @@ namespace TP1_GRUPO_15
             Ejercicio2.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 Ejercicio3 = new Form4(this);
+            Ejercicio3.Show();
+            this.Hide();
+        }
     }
 }

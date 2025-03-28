@@ -41,24 +41,29 @@
             // lbxIzquierda
             // 
             this.lbxIzquierda.FormattingEnabled = true;
-            this.lbxIzquierda.Location = new System.Drawing.Point(75, 123);
+            this.lbxIzquierda.ItemHeight = 20;
+            this.lbxIzquierda.Location = new System.Drawing.Point(112, 189);
+            this.lbxIzquierda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbxIzquierda.Name = "lbxIzquierda";
-            this.lbxIzquierda.Size = new System.Drawing.Size(197, 238);
+            this.lbxIzquierda.Size = new System.Drawing.Size(294, 364);
             this.lbxIzquierda.TabIndex = 0;
             // 
             // lbxDerecha
             // 
             this.lbxDerecha.FormattingEnabled = true;
-            this.lbxDerecha.Location = new System.Drawing.Point(491, 123);
+            this.lbxDerecha.ItemHeight = 20;
+            this.lbxDerecha.Location = new System.Drawing.Point(736, 189);
+            this.lbxDerecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbxDerecha.Name = "lbxDerecha";
-            this.lbxDerecha.Size = new System.Drawing.Size(197, 238);
+            this.lbxDerecha.Size = new System.Drawing.Size(294, 364);
             this.lbxDerecha.TabIndex = 1;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(264, 72);
+            this.txtNombre.Location = new System.Drawing.Point(396, 111);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(227, 20);
+            this.txtNombre.Size = new System.Drawing.Size(338, 26);
             this.txtNombre.TabIndex = 2;
             this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
             // 
@@ -66,9 +71,10 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(82, 72);
+            this.lblNombre.Location = new System.Drawing.Point(123, 111);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(153, 18);
+            this.lblNombre.Size = new System.Drawing.Size(218, 26);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Ingrese un nombre:";
             // 
@@ -78,12 +84,14 @@
             this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(519, 65);
+            this.btnAgregar.Location = new System.Drawing.Point(778, 100);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(95, 31);
+            this.btnAgregar.Size = new System.Drawing.Size(142, 48);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnSeleccion
             // 
@@ -91,9 +99,10 @@
             this.btnSeleccion.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnSeleccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeleccion.Location = new System.Drawing.Point(350, 186);
+            this.btnSeleccion.Location = new System.Drawing.Point(525, 286);
+            this.btnSeleccion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSeleccion.Name = "btnSeleccion";
-            this.btnSeleccion.Size = new System.Drawing.Size(57, 30);
+            this.btnSeleccion.Size = new System.Drawing.Size(86, 46);
             this.btnSeleccion.TabIndex = 5;
             this.btnSeleccion.Text = ">";
             this.btnSeleccion.UseVisualStyleBackColor = false;
@@ -104,18 +113,20 @@
             this.btnTodos.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTodos.Location = new System.Drawing.Point(350, 242);
+            this.btnTodos.Location = new System.Drawing.Point(525, 372);
+            this.btnTodos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTodos.Name = "btnTodos";
-            this.btnTodos.Size = new System.Drawing.Size(57, 30);
+            this.btnTodos.Size = new System.Drawing.Size(86, 46);
             this.btnTodos.TabIndex = 6;
             this.btnTodos.Text = ">>";
             this.btnTodos.UseVisualStyleBackColor = false;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.btnTodos);
             this.Controls.Add(this.btnSeleccion);
             this.Controls.Add(this.btnAgregar);
@@ -124,6 +135,7 @@
             this.Controls.Add(this.lbxDerecha);
             this.Controls.Add(this.lbxIzquierda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nombres";
