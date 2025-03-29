@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -112,6 +113,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elementos";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(17, 33);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(333, 316);
+            this.listBox1.TabIndex = 6;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -123,14 +132,6 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Borrar";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(17, 33);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(333, 316);
-            this.listBox1.TabIndex = 6;
             // 
             // Form3
             // 

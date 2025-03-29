@@ -69,6 +69,7 @@ namespace TP1_GRUPO_15
                 {
                     lbxDerecha.Items.Add(nombre);
                 }
+                    lbxIzquierda.Items.Clear();
             }
         }
         private void btnSeleccion_Click(object sender, EventArgs e)

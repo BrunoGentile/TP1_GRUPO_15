@@ -21,5 +21,15 @@ namespace TP1_GRUPO_15
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nombre = textBox1.Text.Trim();
+            string apellido = textBox2.Text.Trim();
+
+            listBox1.Items.Add(nombre + " " + apellido);
+            textBox1.Clear();
+            textBox2.Clear();
+        }
     }
 }
