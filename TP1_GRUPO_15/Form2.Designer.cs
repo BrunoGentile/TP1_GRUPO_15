@@ -99,6 +99,7 @@
             this.btnSeleccion.TabIndex = 5;
             this.btnSeleccion.Text = ">";
             this.btnSeleccion.UseVisualStyleBackColor = false;
+            this.btnSeleccion.Click += new System.EventHandler(this.btnSeleccion_Click);
             // 
             // btnTodos
             // 

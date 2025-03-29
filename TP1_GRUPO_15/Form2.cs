@@ -59,9 +59,27 @@ namespace TP1_GRUPO_15
 
         private void btnTodos_Click(object sender, EventArgs e)
         {
-            foreach (string nombre in lbxIzquierda.Items)
+            if (lbxIzquierda.Items.Count == 0)
             {
-                lbxDerecha.Items.Add(nombre);
+                MessageBox.Show("No se encuentran datos en la lista");
+            }
+            else
+            {
+                foreach (string nombre in lbxIzquierda.Items)
+                {
+                    lbxDerecha.Items.Add(nombre);
+                }
+            }
+        }
+        private void btnSeleccion_Click(object sender, EventArgs e)
+        {
+            if(lbxIzquierda.Items.Count == 0)
+            {
+                MessageBox.Show("No se encuentran datos en la lista");
+            }
+            else
+            {
+                //funcionalidad del boton
             }
         }
     }
