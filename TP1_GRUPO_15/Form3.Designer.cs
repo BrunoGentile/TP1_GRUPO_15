@@ -118,6 +118,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(17, 33);
             this.listBox1.Name = "listBox1";
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listBox1.Size = new System.Drawing.Size(333, 316);
             this.listBox1.TabIndex = 6;
             // 
@@ -132,6 +133,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Borrar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form3
             // 
