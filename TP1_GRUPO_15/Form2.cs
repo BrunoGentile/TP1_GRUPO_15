@@ -74,13 +74,16 @@ namespace TP1_GRUPO_15
         }
         private void btnSeleccion_Click(object sender, EventArgs e)
         {
-            if(lbxIzquierda.Items.Count == 0)
+            if( lbxIzquierda.Items.Count == 0 )
             {
                 MessageBox.Show("No se encuentran datos en la lista");
             }
             else
             {
-                //funcionalidad del boton
+                foreach ( string Nombre in lbxIzquierda.SelectedItems)
+                {
+                    lbxDerecha.Items.Add(Nombre);
+                }
             }
         }
     }
