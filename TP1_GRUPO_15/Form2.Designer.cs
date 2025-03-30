@@ -43,6 +43,7 @@
             this.lbxIzquierda.FormattingEnabled = true;
             this.lbxIzquierda.Location = new System.Drawing.Point(75, 123);
             this.lbxIzquierda.Name = "lbxIzquierda";
+            this.lbxIzquierda.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbxIzquierda.Size = new System.Drawing.Size(197, 238);
             this.lbxIzquierda.TabIndex = 0;
             // 
