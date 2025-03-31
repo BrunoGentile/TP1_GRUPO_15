@@ -12,9 +12,11 @@ namespace TP1_GRUPO_15
 {
     public partial class Form3 : Form
     {
-        public Form3(Form1 Form)
+        Form1 form1;
+        public Form3(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -53,6 +55,11 @@ namespace TP1_GRUPO_15
             //        listBox1.Items.Remove( listBox1.Items[i] );
             //    }
             //}
+        }
+
+        private void Form3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            form1.Show();
         }
     }
 }
