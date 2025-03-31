@@ -38,6 +38,11 @@ namespace TP1_GRUPO_15
                 return Genero;
         }
 
+        private bool ValidarSeleccionOficio()
+        {
+            return checkedLbOficio.CheckedItems.Count > 0;
+        }
+
         /// Eventos
 
         private void Form4_Load(object sender, EventArgs e)
@@ -53,6 +58,12 @@ namespace TP1_GRUPO_15
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+            if (ValidarSeleccionOficio() == false)
+            {
+                MessageBox.Show("Debe seleccionar al menos un oficio.");
+                return;
+            }
+
             string Genero = VerificarGenero();
         }
     }
