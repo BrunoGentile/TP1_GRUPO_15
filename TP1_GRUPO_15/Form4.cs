@@ -12,9 +12,12 @@ namespace TP1_GRUPO_15
 {
     public partial class Form4 : Form
     {
-        public Form4(Form1 form)
+        Form1 form1;
+        public Form4(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
+
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -22,6 +25,10 @@ namespace TP1_GRUPO_15
 
         }
 
-     
+        private void Form4_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            form1.Show();
+
+        }
     }
 }

@@ -153,7 +153,9 @@
             this.Controls.Add(this.gbxSexo);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio3";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form4_FormClosed);
             this.Load += new System.EventHandler(this.Form4_Load);
             this.gbxSexo.ResumeLayout(false);
             this.gbxSexo.PerformLayout();

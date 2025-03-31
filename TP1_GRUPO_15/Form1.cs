@@ -12,21 +12,23 @@ namespace TP1_GRUPO_15
 {
     public partial class Form1: Form
     {
+        
         public Form1()
         {
             InitializeComponent();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 Ejercicio1 = new Form2(this);
+            Formulario2 Ejercicio1 = new Formulario2(this);
             Ejercicio1.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 Ejercicio2 = new Form3(this); 
+            Formulario3 Ejercicio2 = new Formulario3(this); 
             Ejercicio2.Show();
             this.Hide();
         }
@@ -39,6 +41,11 @@ namespace TP1_GRUPO_15
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
 
         }

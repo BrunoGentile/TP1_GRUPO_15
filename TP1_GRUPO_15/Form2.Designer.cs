@@ -1,6 +1,6 @@
 ﻿namespace TP1_GRUPO_15
 {
-    partial class Form2
+    partial class Formulario2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formulario2));
             this.lbxIzquierda = new System.Windows.Forms.ListBox();
             this.lbxDerecha = new System.Windows.Forms.ListBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -116,7 +116,7 @@
             this.btnTodos.UseVisualStyleBackColor = false;
             this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
-            // Form2
+            // Formulario2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,7 +129,7 @@
             this.Controls.Add(this.lbxDerecha);
             this.Controls.Add(this.lbxIzquierda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "Formulario2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nombres";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);

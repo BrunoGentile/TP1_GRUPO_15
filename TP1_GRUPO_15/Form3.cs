@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace TP1_GRUPO_15
 {
-    public partial class Form3 : Form
+    public partial class Formulario3 : Form
     {
+        Form1 formulario1;
+        public Formulario3(Form1 formulario1)
         Form1 form1;
         public Form3(Form1 form1)
         {

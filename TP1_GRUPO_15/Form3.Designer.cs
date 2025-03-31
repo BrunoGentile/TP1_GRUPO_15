@@ -1,6 +1,6 @@
 ﻿namespace TP1_GRUPO_15
 {
-    partial class Form3
+    partial class Formulario3
     {
         /// <summary>
         /// Required designer variable.
@@ -135,14 +135,14 @@
             this.btnBorrar.UseVisualStyleBackColor = false;
             this.btnBorrar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form3
+            // Formulario3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 478);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form3";
+            this.Name = "Formulario3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nombre y apellido";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
