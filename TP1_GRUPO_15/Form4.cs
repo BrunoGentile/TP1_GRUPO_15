@@ -20,6 +20,26 @@ namespace TP1_GRUPO_15
 
         }
 
+        /// Funciones
+
+        private string VerificarGenero()
+        {
+            string Genero;
+
+            if ( rbFemenino.Checked)
+            {
+                Genero = "Femenino";
+            }
+            else
+            {
+                Genero = "Masculino";
+            }
+
+                return Genero;
+        }
+
+        /// Eventos
+
         private void Form4_Load(object sender, EventArgs e)
         {
 
@@ -29,6 +49,11 @@ namespace TP1_GRUPO_15
         {
             form1.Show();
 
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            string Genero = VerificarGenero();
         }
     }
 }

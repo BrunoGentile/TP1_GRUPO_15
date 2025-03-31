@@ -130,6 +130,7 @@
             this.btnMostrar.TabIndex = 4;
             this.btnMostrar.Text = "Mostrar lo que se seleccionó";
             this.btnMostrar.UseVisualStyleBackColor = false;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // lbElementos
             // 
