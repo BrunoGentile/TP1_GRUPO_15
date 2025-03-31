@@ -13,9 +13,15 @@ namespace TP1_GRUPO_15
     public partial class Formulario3 : Form
     {
         Form1 formulario1;
+        
         public Formulario3(Form1 formulario1)
+        {
+            InitializeComponent();
+            this.formulario1 = formulario1;
+        }
+        
         Form1 form1;
-        public Form3(Form1 form1)
+        public void Form3(Form1 form1)
         {
             InitializeComponent();
             this.form1 = form1;
@@ -61,7 +67,7 @@ namespace TP1_GRUPO_15
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
         {
-            form1.Show();
+            formulario1.Show();
         }
     }
 }
