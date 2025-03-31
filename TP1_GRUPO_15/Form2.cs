@@ -13,9 +13,11 @@ namespace TP1_GRUPO_15
 {
     public partial class Form2 : Form
     {
-        public Form2(Form1 Form)
+        Form1 form1;
+        public Form2(Form1 form1)
         {
             InitializeComponent();
+            this.form1 = form1;
         }
         //private void ValidarAgregar()
         //{
@@ -80,11 +82,24 @@ namespace TP1_GRUPO_15
             }
             else
             {
-                foreach ( string Nombre in lbxIzquierda.SelectedItems)
+                List<string> itemsToRemove = new List<string>();
+
+                foreach (string Nombre in lbxIzquierda.SelectedItems)
                 {
                     lbxDerecha.Items.Add(Nombre);
+                    itemsToRemove.Add(Nombre);
+                }
+
+                foreach (string Nombre in itemsToRemove)
+                {
+                    lbxIzquierda.Items.Remove(Nombre);
                 }
             }
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            form1.Show();
         }
     }
 }

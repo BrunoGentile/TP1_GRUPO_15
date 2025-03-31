@@ -34,13 +34,25 @@ namespace TP1_GRUPO_15
 
         private void button2_Click(object sender, EventArgs e)
         {
-            for( int i = listBox1.Items.Count - 1; i > 0; i--)
+            List<object> itemsToRemove = new List<object>();
+
+            foreach (var item in listBox1.SelectedItems)
             {
-                if( listBox1.GetSelected(i) )
-                {
-                    listBox1.Items.Remove( listBox1.Items[i] );
-                }
+                itemsToRemove.Add(item);
             }
+
+            foreach (var item in itemsToRemove)
+            {
+                listBox1.Items.Remove(item);
+            }
+
+            //for( int i = listBox1.Items.Count - 1; i > 0; i--)
+            //{
+            //    if( listBox1.GetSelected(i) )
+            //    {
+            //        listBox1.Items.Remove( listBox1.Items[i] );
+            //    }
+            //}
         }
     }
 }

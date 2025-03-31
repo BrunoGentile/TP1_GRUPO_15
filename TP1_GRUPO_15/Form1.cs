@@ -37,5 +37,10 @@ namespace TP1_GRUPO_15
             Ejercicio3.Show();
             this.Hide();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
