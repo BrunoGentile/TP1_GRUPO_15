@@ -37,9 +37,19 @@ namespace TP1_GRUPO_15
             string nombre = textBox1.Text.Trim();
             string apellido = textBox2.Text.Trim();
 
-            listBox1.Items.Add(nombre + " " + apellido);
+            if (nombre.Length > 0 && apellido.Length > 0) 
+            {
+                listBox1.Items.Add(nombre + " " + apellido);
+            }
+            else
+            {
+                MessageBox.Show("Debe completar todos los campos");
+            }
+
             textBox1.Clear();
             textBox2.Clear();
+
+            listBox1.Sorted = true;
         }
 
         private void button2_Click(object sender, EventArgs e)

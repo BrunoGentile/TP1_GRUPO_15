@@ -66,6 +66,7 @@
             // rbFemenino
             // 
             this.rbFemenino.AutoSize = true;
+            this.rbFemenino.Checked = true;
             this.rbFemenino.Location = new System.Drawing.Point(28, 37);
             this.rbFemenino.Name = "rbFemenino";
             this.rbFemenino.Size = new System.Drawing.Size(71, 17);
@@ -99,6 +100,7 @@
             // rbCasado
             // 
             this.rbCasado.AutoSize = true;
+            this.rbCasado.Checked = true;
             this.rbCasado.Location = new System.Drawing.Point(29, 37);
             this.rbCasado.Name = "rbCasado";
             this.rbCasado.Size = new System.Drawing.Size(61, 17);
@@ -106,6 +108,7 @@
             this.rbCasado.TabStop = true;
             this.rbCasado.Text = "Casado";
             this.rbCasado.UseVisualStyleBackColor = true;
+            this.rbCasado.CheckedChanged += new System.EventHandler(this.rbCasado_CheckedChanged);
             // 
             // checkedLbOficio
             // 

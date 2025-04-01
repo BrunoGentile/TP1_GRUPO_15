@@ -66,5 +66,10 @@ namespace TP1_GRUPO_15
 
             string Genero = VerificarGenero();
         }
+
+        private void rbCasado_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

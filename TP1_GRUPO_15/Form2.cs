@@ -29,7 +29,6 @@ namespace TP1_GRUPO_15
         //    btnAgregar.Enabled = (txtNombre.BackColor != Color.Red);
         //}
 
-
         private bool ValidarAgregar(string TB)
         {
             bool Condicion = true;
@@ -74,8 +73,6 @@ namespace TP1_GRUPO_15
             }
 
             txtNombre.Text = "";
-
-
         }
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
