@@ -54,7 +54,7 @@ namespace TP1_GRUPO_15
             string nombre = textBox1.Text.Trim();
             string apellido = textBox2.Text.Trim();
            
-            if (nombre.Length > 0 && apellido.Length > 0) 
+            if (nombre.Length > 0 && apellido.Length > 0 && NombresEnBlanco(nombre, apellido) == false) 
             {
                 if(!CompararNombres(nombre, apellido))
                 {
@@ -64,6 +64,8 @@ namespace TP1_GRUPO_15
             }
             else
             {
+                textBox1.BackColor = Color.DarkRed;
+                textBox2.BackColor = Color.DarkRed;
                 MessageBox.Show("Debe completar todos los campos");
             }
 
@@ -72,7 +74,25 @@ namespace TP1_GRUPO_15
 
             listBox1.Sorted = true;
         }
-
+        private bool NombresEnBlanco(string nombre, string apellido)
+                {
+                    if (nombre.Trim().Length == 0 || apellido.Trim().Length == 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            textBox1.BackColor = System.Drawing.SystemColors.Window;
+        }
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            textBox2.BackColor = System.Drawing.SystemColors.Window;
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             List<object> itemsToRemove = new List<object>();
