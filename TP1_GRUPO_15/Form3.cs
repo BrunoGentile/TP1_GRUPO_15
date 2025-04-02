@@ -85,14 +85,7 @@ namespace TP1_GRUPO_15
                         return false;
                     }
                 }
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            textBox1.BackColor = System.Drawing.SystemColors.Window;
-        }
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            textBox2.BackColor = System.Drawing.SystemColors.Window;
-        }
+  
         private void button2_Click(object sender, EventArgs e)
         {
             List<object> itemsToRemove = new List<object>();
@@ -121,6 +114,14 @@ namespace TP1_GRUPO_15
             formulario1.Show();
         }
 
-      
+        private void textBox1_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            textBox1.BackColor = System.Drawing.SystemColors.Window;
+        }
+
+        private void textBox2_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            textBox2.BackColor = System.Drawing.SystemColors.Window;
+        }
     }
 }
