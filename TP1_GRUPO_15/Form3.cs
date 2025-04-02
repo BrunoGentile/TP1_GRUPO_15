@@ -32,14 +32,35 @@ namespace TP1_GRUPO_15
 
         }
 
+        private bool CompararNombres(string nombre, string apellido)
+        {
+            string nombreApellido = nombre +" "+ apellido;
+            
+            foreach (string personas in listBox1.Items)
+            {
+
+                if(nombreApellido.ToLower() == personas.ToLower())
+                {
+                    
+                    MessageBox.Show("el nombre ya se encuentra en la lista, ingrese uno distinto");
+                    return true;
+                }
+            }
+            return false;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string nombre = textBox1.Text.Trim();
             string apellido = textBox2.Text.Trim();
-
+           
             if (nombre.Length > 0 && apellido.Length > 0) 
             {
+                if(!CompararNombres(nombre, apellido))
+                {
                 listBox1.Items.Add(nombre + " " + apellido);
+                }
+
             }
             else
             {
@@ -79,5 +100,7 @@ namespace TP1_GRUPO_15
         {
             formulario1.Show();
         }
+
+      
     }
 }

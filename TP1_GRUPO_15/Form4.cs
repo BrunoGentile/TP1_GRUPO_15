@@ -65,6 +65,7 @@ namespace TP1_GRUPO_15
             }
 
             string Genero = VerificarGenero();
+            string EstadoCivil = (string)(rbCasado.Checked ? "Casado" : "Soltero");
         }
 
         private void rbCasado_CheckedChanged(object sender, EventArgs e)
