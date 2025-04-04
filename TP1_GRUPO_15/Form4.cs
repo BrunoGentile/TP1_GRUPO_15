@@ -63,13 +63,36 @@ namespace TP1_GRUPO_15
                 MessageBox.Show("Debe seleccionar al menos un oficio.");
                 return;
             }
-
+            string seleccion = "Usted seleccionó los siguientes elementos:" + "\r\n";
             string Genero = VerificarGenero();
             string EstadoCivil = (string)(rbCasado.Checked ? "Casado" : "Soltero");
+
+            List<string> seleccionados = new List<string>();
+
+            foreach (var item in checkedLbOficio.CheckedItems)
+            {
+                seleccionados.Add("- " + item.ToString());
+            }
+
+            string mensaje = "Usted seleccionó los siguientes elementos:\n";
+            mensaje += "Sexo: " + Genero +"\r\n";
+            mensaje += "Estado Civil: " + EstadoCivil + "\r\n";
+            mensaje += "Oficio: " + "\r\n";
+            mensaje += string.Join("\n", seleccionados) + "\r\n";
+
+            lbElementos.Text = mensaje;
+
         }
 
         private void rbCasado_CheckedChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void lbElementos_Click(object sender, EventArgs e)
+        {
+            {
+            }
 
         }
     }

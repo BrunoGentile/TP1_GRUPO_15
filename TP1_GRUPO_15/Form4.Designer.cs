@@ -144,6 +144,7 @@
             this.lbElementos.Size = new System.Drawing.Size(238, 20);
             this.lbElementos.TabIndex = 5;
             this.lbElementos.Text = "label para mostrar los elementos";
+            this.lbElementos.Click += new System.EventHandler(this.lbElementos_Click);
             // 
             // Form4
             // 
