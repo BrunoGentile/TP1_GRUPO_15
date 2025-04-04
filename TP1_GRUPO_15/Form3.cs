@@ -54,7 +54,7 @@ namespace TP1_GRUPO_15
             string nombre = textBox1.Text.Trim();
             string apellido = textBox2.Text.Trim();
            
-            if (nombre.Length > 0 && apellido.Length > 0 && NombresEnBlanco(nombre, apellido) == false) 
+            if (NombresEnBlanco(nombre, apellido) == false) 
             {
                 if(!CompararNombres(nombre, apellido))
                 {
@@ -76,7 +76,7 @@ namespace TP1_GRUPO_15
         }
         private bool NombresEnBlanco(string nombre, string apellido)
                 {
-                    if (nombre.Trim().Length == 0 || apellido.Trim().Length == 0)
+                    if (nombre.Length == 0 || apellido.Length == 0)
                     {
                         return true;
                     }
@@ -122,6 +122,11 @@ namespace TP1_GRUPO_15
         private void textBox2_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             textBox2.BackColor = System.Drawing.SystemColors.Window;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
